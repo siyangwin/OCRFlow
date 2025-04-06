@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project.ViewModel</name>
+    </assembly>
+    <members>
+        <member name="T:Project.ViewModel.ConfigResDto">
+            <summary>
+            配置响应类
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ConfigResDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ConfigResDto.Name">
+            <summary>
+            名称(code)
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ConfigResDto.Values">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ConfigResDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ConfigResDto.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.AuthorizationTokenResDto">
+            <summary>
+            用户令牌
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.AuthorizationTokenResDto.UserId">
+            <summary>
+            当前用户编号
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.AuthorizationTokenResDto.Token">
+            <summary>
+            当前用户令牌
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.PageJson`1">
+            <summary>
+            翻頁返回基類
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Project.ViewModel.PageJson`1.TotalCount">
+            <summary>
+            總條數
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageJson`1.Items">
+            <summary>
+            數據集合
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.PageJson_Point`1">
+            <summary>
+            積分記錄
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Project.ViewModel.PageJson_Point`1.TotalPoint">
+            <summary>
+            總積分
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageJson_Point`1.TotalCount">
+            <summary>
+            總條數
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageJson_Point`1.Items">
+            <summary>
+            數據集合
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.PageListReqAppDto">
+            <summary>
+            APP請求實體
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqAppDto.pageIndex">
+            <summary>
+            當前頁
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqAppDto.pageSize">
+            <summary>
+            顯示數
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqAppDto.sort">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqAppDto.sortOrder">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.PageListReqDto">
+            <summary>
+            翻頁列表請求基類
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqDto.pageIndex">
+            <summary>
+            當前頁
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqDto.pageSize">
+            <summary>
+            顯示數
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqDto.sort">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqDto.sortOrder">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.PageListReqDto.dynamicWhere">
+            <summary>
+            動態條件
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.ResultModels`1">
+            <summary>
+            API返回信息
+            </summary>
+        </member>
+        <member name="M:Project.ViewModel.ResultModels`1.#ctor">
+            <summary>
+            返回類型
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModels`1.api_version">
+            <summary>
+            版本號
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModels`1.success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModels`1.code">
+            <summary>
+            code
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModels`1.total">
+            <summary>
+            總數量
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModels`1.message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModels`1.data">
+            <summary>
+            返回數據集合
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.ResultModel">
+            <summary>
+            API返回信息
+            </summary>
+        </member>
+        <member name="M:Project.ViewModel.ResultModel.#ctor">
+            <summary>
+            返回類型
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel.api_version">
+            <summary>
+            版本號
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel.success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel.code">
+            <summary>
+            code
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel.message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.ResultModel`1">
+            <summary>
+            API返回信息
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Project.ViewModel.ResultModel`1.#ctor">
+            <summary>
+            返回類型
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel`1.api_version">
+            <summary>
+            版本號
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel`1.success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel`1.code">
+            <summary>
+            code
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel`1.message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultModel`1.data">
+            <summary>
+            返回數據集合
+            </summary>
+        </member>
+        <member name="M:Project.ViewModel.ResultPageModel`1.#ctor">
+            <summary>
+            返回類型
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel`1.api_version">
+            <summary>
+            版本號
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel`1.success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel`1.code">
+            <summary>
+            code
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel`1.message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel`1.data">
+            <summary>
+            分頁數據
+            </summary>
+        </member>
+        <member name="T:Project.ViewModel.ResultPageModel_Point`1">
+            <summary>
+            積分記錄專用
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Project.ViewModel.ResultPageModel_Point`1.#ctor">
+            <summary>
+            返回類型
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel_Point`1.api_version">
+            <summary>
+            版本號
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel_Point`1.success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel_Point`1.code">
+            <summary>
+            code
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel_Point`1.message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:Project.ViewModel.ResultPageModel_Point`1.data">
+            <summary>
+            分頁數據
+            </summary>
+        </member>
+    </members>
+</doc>

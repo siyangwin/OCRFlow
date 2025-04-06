@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Project.Model.EnumModel.LanguageEnum">
+            <summary>
+            語言
+            </summary>
+        </member>
+        <member name="F:Project.Model.EnumModel.LanguageEnum.CN">
+            <summary>
+            中文
+            </summary>
+        </member>
+        <member name="F:Project.Model.EnumModel.LanguageEnum.EN">
+            <summary>
+            英文
+            </summary>
+        </member>
+        <member name="T:Project.Model.EnumModel.SystemLogType">
+            <summary>
+            写日志类型
+            </summary>
+        </member>
+        <member name="F:Project.Model.EnumModel.SystemLogType.Sql">
+            <summary>
+            写入数据
+            </summary>
+        </member>
+        <member name="F:Project.Model.EnumModel.SystemLogType.Local">
+            <summary>
+            写入本地
+            </summary>
+        </member>
+        <member name="F:Project.Model.EnumModel.SystemLogType.SqlAndLocal">
+            <summary>
+            写入数据库和本地
+            </summary>
+        </member>
+        <member name="T:Project.Model.SystemLog">
+            <summary>
+            系統日志
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.Id">
+            <summary>
+            自增列
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.CreateUser">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.UpdateUser">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.IsDelete">
+            <summary>
+            删除标志（已经删除[True]=1    未删除[False]=0）
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.Guid">
+            <summary>
+            唯一编号
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.ClientType">
+            <summary>
+            請求客戶類型 APP CMS
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.APIName">
+            <summary>
+            条款Url
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.UserId">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.DeviceId">
+            <summary>
+            设备唯一编号
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.Instructions">
+            <summary>
+            操作说明
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.ReqParameter">
+            <summary>
+            请求参数内容
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.ResParameter">
+            <summary>
+            返回参数内容
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.Time">
+            <summary>
+            请求耗费时间
+            </summary>
+        </member>
+        <member name="P:Project.Model.SystemLog.IP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Project.Model.Table.AuthorizationToken">
+            <summary>
+            授权Token
+            </summary>
+        </member>
+        <member name="P:Project.Model.Table.AuthorizationToken.UserId">
+            <summary>
+            用户Id(关联用户表)
+            </summary>
+        </member>
+        <member name="P:Project.Model.Table.AuthorizationToken.Token">
+            <summary>
+            登录令牌
+            </summary>
+        </member>
+        <member name="T:Project.Model.Table.Config">
+            <summary>
+            配置文件
+            </summary>
+        </member>
+        <member name="P:Project.Model.Table.Config.Name">
+            <summary>
+            配置项目
+            </summary>
+        </member>
+        <member name="P:Project.Model.Table.Config.Values">
+            <summary>
+            对应的值
+            </summary>
+        </member>
+        <member name="P:Project.Model.Table.Config.Remark">
+            <summary>
+            备注，添加当前配置的说明
+            </summary>
+        </member>
+        <member name="T:Project.Model.BaseModel">
+            <summary>
+            公共的类
+            </summary>
+        </member>
+        <member name="P:Project.Model.BaseModel.Id">
+            <summary>
+            自增列
+            </summary>
+        </member>
+        <member name="P:Project.Model.BaseModel.CreateUser">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Project.Model.BaseModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Project.Model.BaseModel.UpdateUser">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Project.Model.BaseModel.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Project.Model.BaseModel.IsDelete">
+            <summary>
+            删除标志（已经删除[True]=1    未删除[False]=0）
+            </summary>
+        </member>
+        <member name="T:Project.Model.ViewCms.vm_cms_Config">
+            <summary>
+            配置文件
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_Config.Id">
+            <summary>
+            自增列
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_Config.Name">
+            <summary>
+            配置项目
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_Config.Values">
+            <summary>
+            对应的值
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_Config.Remark">
+            <summary>
+            备注，添加当前配置的说明
+            </summary>
+        </member>
+        <member name="T:Project.Model.ViewCms.vm_cms_VersionManagement">
+            <summary>
+            版本控制
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Id">
+            <summary>
+            自增列
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Type">
+            <summary>
+            APP类型： Android：1  IOS：2
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Version">
+            <summary>
+            版本号
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.RequestUrl">
+            <summary>
+            请求API地址
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Status">
+            <summary>
+            不提醒：1    提醒更新：2     提醒并强制更新：3
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Title_CN">
+            <summary>
+            版本提示标题中文
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Title_EN">
+            <summary>
+            版本提示标题英文
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Content_CN">
+            <summary>
+            版本提示内容中文
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.Content_EN">
+            <summary>
+            版本提示内容英文
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.UpdateUser">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Project.Model.ViewCms.vm_cms_VersionManagement.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:Project.Model.View.vm_app_CheckAuthorizationToken">
+            <summary>
+            检查当前用户的有效Token
+            </summary>
+        </member>
+        <member name="P:Project.Model.View.vm_app_CheckAuthorizationToken.UserId">
+            <summary>
+            当前用户编号
+            </summary>
+        </member>
+        <member name="P:Project.Model.View.vm_app_CheckAuthorizationToken.Token">
+            <summary>
+            当前用户令牌
+            </summary>
+        </member>
+        <member name="P:Project.Model.vm_app_Config_List.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Project.Model.vm_app_Config_List.Name">
+            <summary>
+            名称(code)
+            </summary>
+        </member>
+        <member name="P:Project.Model.vm_app_Config_List.Values">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Project.Model.vm_app_Config_List.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Project.Model.vm_app_Config_List.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+    </members>
+</doc>

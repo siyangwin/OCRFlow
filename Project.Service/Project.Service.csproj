@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Project.Service</AssemblyName>
+    <RootNamespace>Project.Service</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+    <PackageReference Include="PaddleOCRSharp" Version="4.5.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kogel.Dapper.Extension.Mssql\Kogel.Dapper.Extension.Mssql.csproj" />
+    <ProjectReference Include="..\Kogel.Dapper.Extension\Kogel.Dapper.Extension.csproj" />
+    <ProjectReference Include="..\Kogel.Repository\Kogel.Repository.csproj" />
+    <ProjectReference Include="..\Project.Core\Project.Core.csproj" />
+    <ProjectReference Include="..\Project.IService\Project.IService.csproj" />
+    <ProjectReference Include="..\Project.Model\Project.Model.csproj" />
+    <ProjectReference Include="..\Project.MvcCore.Extension\Project.MvcCore.Extension.csproj" />
+    <ProjectReference Include="..\Project.ViewModel\Project.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

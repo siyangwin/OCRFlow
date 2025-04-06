@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Project.ViewModel</AssemblyName>
+    <RootNamespace>Project.ViewModel</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Project.ViewModel.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Project.ViewModel.xml</DocumentationFile>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kogel.Dapper.Extension\Kogel.Dapper.Extension.csproj" />
+    <ProjectReference Include="..\Project.Model\Project.Model.csproj" />
+  </ItemGroup>
+</Project>

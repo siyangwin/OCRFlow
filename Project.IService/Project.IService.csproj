@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Project.IService</AssemblyName>
+    <RootNamespace>Project.IService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kogel.Repository\Kogel.Repository.csproj" />
+    <ProjectReference Include="..\Project.Core\Project.Core.csproj" />
+    <ProjectReference Include="..\Project.Model\Project.Model.csproj" />
+    <ProjectReference Include="..\Project.ViewModel\Project.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

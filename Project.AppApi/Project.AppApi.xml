@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project.AppApi</name>
+    </assembly>
+    <members>
+        <member name="T:Project.AppApi.Controllers.BaseController">
+            <summary>
+            控制器基類
+            </summary>
+        </member>
+        <member name="P:Project.AppApi.Controllers.BaseController.UserId">
+            <summary>
+            用戶id
+            </summary>
+        </member>
+        <member name="P:Project.AppApi.Controllers.BaseController.Token">
+            <summary>
+            token
+            </summary>
+        </member>
+        <member name="P:Project.AppApi.Controllers.BaseController.Language">
+            <summary>
+            語言
+            </summary>
+        </member>
+        <member name="P:Project.AppApi.Controllers.BaseController.MarketId">
+            <summary>
+            街市id
+            </summary>
+        </member>
+        <member name="M:Project.AppApi.Controllers.BaseController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Project.AppApi.Controllers.BaseController.Aop_OnExecuting(Dapper.CommandDefinition@)">
+            <summary>
+            sql执行前
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:Project.AppApi.Controllers.CacheController.GetList">
+            <summary>
+            获取所有系统缓存键列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Project.AppApi.Controllers.CacheController.ResetSystemAll">
+            <summary>
+            重置程序所有系统缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Project.AppApi.Controllers.CacheController.ResetSystemUser(System.Collections.Generic.List{System.String})">
+            <summary>
+            重置程序用户系统缓存
+            </summary>
+            <param name="UserIdList">用户id集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Project.AppApi.Controllers.CacheController.GetProjectList">
+            <summary>
+            获取所有程序缓存键列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Project.AppApi.Controllers.CacheController.Reset(System.Collections.Generic.List{System.String})">
+            <summary>
+            重置程序缓存（重置传入缓存）
+            </summary>
+            <param name="cacheList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project.AppApi.Controllers.CacheController.ResetByKey(System.String)">
+            <summary>
+            重置程序缓存（重置传入模糊匹配数据）
+            </summary>
+            <param name="cacheKey">模糊匹配数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Project.AppApi.Controllers.CacheController.ResetAll">
+            <summary>
+            重置程序所有缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Project.AppApi.Areas.OCR.OCRController.#ctor(Project.IService.App.IOCRService)">
+            <summary>
+             注入
+            </summary>
+            <param name="oCRService"></param>
+        </member>
+        <member name="M:Project.AppApi.Areas.OCR.OCRController.CheckOcr(System.Int32,System.String)">
+            <summary>
+            测试OCR
+            </summary>
+            <param name="type">1.使用普通模式识别  2.使用表格模式识别</param>
+            <param name="path">图片路径</param>
+            <returns></returns>
+        </member>
+        <member name="P:Project.AppApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Project.AppApi.Startup.Services">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Project.AppApi.Startup.ApiName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Project.AppApi.Startup.ResourceManage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Project.AppApi.SwaggerHelper.CustomApiVersion.ApiVersions">
+            <summary>
+            Api接口版本 自定義
+            </summary>
+        </member>
+        <member name="F:Project.AppApi.SwaggerHelper.CustomApiVersion.ApiVersions.V1">
+            <summary>
+            V1 版本
+            </summary>
+        </member>
+        <member name="F:Project.AppApi.SwaggerHelper.CustomApiVersion.ApiVersions.V2">
+            <summary>
+            V2 版本
+            </summary>
+        </member>
+        <member name="T:Project.AppApi.SwaggerHelper.CustomRouteAttribute">
+            <summary>
+            自定義路由 /api/{version}/[controler]/[action]
+            </summary>
+        </member>
+        <member name="P:Project.AppApi.SwaggerHelper.CustomRouteAttribute.GroupName">
+            <summary>
+            分組名稱,是來實現接口 IApiDescriptionGroupNameProvider
+            </summary>
+        </member>
+        <member name="M:Project.AppApi.SwaggerHelper.CustomRouteAttribute.#ctor(System.String)">
+            <summary>
+            自定義路由構造函數，繼承基類路由
+            </summary>
+            <param name="actionName"></param>
+        </member>
+        <member name="M:Project.AppApi.SwaggerHelper.CustomRouteAttribute.#ctor(Project.AppApi.SwaggerHelper.CustomApiVersion.ApiVersions,System.String)">
+            <summary>
+            自定義版本+路由構造函數，繼承基類路由
+            </summary>
+            <param name="actionName"></param>
+            <param name="version"></param>
+        </member>
+    </members>
+</doc>
